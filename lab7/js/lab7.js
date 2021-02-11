@@ -24,6 +24,10 @@ function sortName(userName) {
   return sortedName;
 }
 
+// output
+name = window.prompt("Please tell me your name.")
+document.writeln("Oh hey, I fixed your name: ", sortName(name), "</br>");
+
 // NO SPACES :<
 function noSpace(str) {
   var arr = str.split("");
@@ -59,6 +63,3 @@ function sortUpperAndLower(str) {
 
 var s = window.prompt("string please");
 sortUpperAndLower(s);
-// output
-name = window.prompt("Please tell me your name.")
-document.writeln("Oh hey, I fixed your name: ", sortName(name), "</br>");

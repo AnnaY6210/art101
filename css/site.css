@@ -5,6 +5,16 @@ h1 {
   font-style: italic;
 }
 
+h2 {
+  color: #66fcf1;
+  text-align: center;
+}
+
+h3 {
+  color: #66fcf1;
+  text-align: center;
+}
+
 img {
   width: 50%;
   display: block;
