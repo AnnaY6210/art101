@@ -1,0 +1,9 @@
+#output {
+  column-width: 200px;
+}
+
+#output p {
+  padding: 5px;
+  margin: 5px;
+  text-align: left;
+}
