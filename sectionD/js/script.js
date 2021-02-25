@@ -51,3 +51,12 @@ function userInfo(fName, lName) {
 }
 
 console.log(userInfo("Anna", "Yu"));
+
+for (var i = 0; i < 10; i++) {
+  if (i % 2 == 0) {
+    $("#container").append(`<div id=box_id_${i} class='box_even'></div>`);
+  } else {
+    $("#container").append(`<div id=box_id_${i} class='box_odd'></div>`);
+  }
+
+}

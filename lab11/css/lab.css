@@ -1,0 +1,39 @@
+#challenge.special {
+  border-style: dotted;
+  border-color: inherit;
+  padding: 10px;
+}
+
+#problems.special {
+  border-style: dashed;
+  border-color: inherit;
+  padding: 10px;
+}
+
+#results.special {
+  border-style: solid;
+  border-color: inherit;
+  padding: 10px;
+}
+
+.btn {
+  text-align: center;
+  display: inline-block;
+  background-color: #0b0c10;
+  border: 2px double #66fcf1;
+  padding: 15px 32px;
+  font-size: 16px;
+  color: #66fcf1;
+
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition-duration: 0.4s;
+}
+
+.btn:hover {
+  background-color: #66fcf1;
+  color: #0b0c10
+}
