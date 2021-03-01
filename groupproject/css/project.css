@@ -1,0 +1,78 @@
+/* https://www.w3schools.com/howto/howto_css_fixed_sidebar.asp */
+#countybtns {
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+}
+
+.btn {
+  width: 90%;
+  margin: 10px;
+  padding: 1em;
+  cursor: pointer;
+
+  border: .1em solid #008CBA;
+  color: black;
+  background-color: white;
+}
+
+.btn:hover {
+  background-color: #008CBA; /* Pale Blue */
+}
+/* from https://github.com/ehsalazar/art101/blob/master/groupproject/css/lab.css */
+/* https://www.w3schools.com/csS/css3_buttons.asp */
+
+.county_button {
+  background-color: #008CBA; /* Pale Blue */
+
+
+  padding: 1em 2em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1em;
+  cursor: pointer;
+  float: left;
+  margin-bottom: 2em;
+}
+
+
+.counties {
+  padding: 1em;
+  margin: 1em;
+  margin-left: 160px;
+  border: solid .25em black;
+  clear: both;
+
+}
+
+.info_button {
+  width: 100%;
+  text-align: left;
+  margin-bottom: 2em;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA; /* Pale Blue */
+}
+
+.info_button:hover {
+  background-color: #008CBA; /* Pale Blue */
+  color: white;
+}
+
+.info {
+  display: none;
+  margin-bottom: 2em;
+}
+
+.info a {
+  text-decoration: none;
+}
+
+.unhideTest,.unhideVaccine,.unhideAdditional {
+  display: block;
+}

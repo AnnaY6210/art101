@@ -1,5 +1,38 @@
+#input {
+  border: solid 2px #c5c6c7;
+  padding: 10px;
+  background-color: #141414;
+}
+
+#input p {
+  padding: 5px;
+  margin: 5px;
+  text-align: left;
+}
+
+#submit {
+  text-align: center;
+  display: inline-block;
+  background-color: #0b0c10;
+  border: 2px double #66fcf1;
+  padding: 15px 32px;
+  margin: 20px;
+  font-size: 16px;
+  color: #66fcf1;
+
+  display: block;
+  position: relative;
+}
+
+th {
+  color: #c5c6c7;
+}
+
 #output {
-  column-width: 200px;
+  column-width: 150px;
+  border: solid 2px #c5c6c7;
+  padding: 10px;
+  background-color: #141414;
 }
 
 #output p {

@@ -4,28 +4,41 @@
  * License: Public Domain
 */
 
-function multiples() {
-  // loops through 1 to 200
-  for (var i = 1; i < 201; i++) {
-    // creates empty string
+function multiples(start, end, mult) {
+  for (var i = start; i <= end; i++) {
     var str = "";
-    // adds Fizz to str if i is divisible by 3
-    if (i % 3 == 0) str += "Fizz";
-    // adds Buzz to str if i is divisible by 3
-    if (i % 5 == 0) str += "Buzz";
-    // adds Boom to str if i is divisible by 7
-    if (i % 7 == 0) str += "Boom";
-    // checks if str is an empty string
+    for (var m in mult) {
+      if (i % m == 0) {
+        str += mult[m];
+      }
+    }
     if (str == "") {
-      // sets str to i
       str = i;
     } else {
-      // set str to i: str!
-      str = i + ": " + str + "!";
+      str = i + ": " + str + "!"
     }
-    // appends str to the output div
-    $("#output").append("<p>" + str + "</p>");
+    $("#output").append(`<p> ${str} </p>`);
   }
 }
 
-multiples();
+function dict() {
+  var dict = {};
+  for (var i = 1; i < 4; i++) {
+    var numid = "num" + i;
+    var textid = "text" + i;
+    var num = $("#" + numid).val();
+    var text = $("#" + textid).val();
+    if (text && num) {
+      dict[num] = text;
+    }
+  }
+  return dict;
+}
+
+//when submit button clicked, all input values are places into multiples()
+$("#submit").click(function() {
+  var start = $("#startnum").val();
+  var end = $("#endnum").val();
+  var mult = dict();
+  multiples(start, end, mult);
+});
