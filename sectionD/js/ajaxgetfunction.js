@@ -1,8 +1,8 @@
 function getajax() {
   $.ajax({
-    url: "data/data.txt",
+    url: "https://en.wikipedia.org/api/rest_v1/?spec",
     type: "GET",
-    datatype: "text",
+    datatype: "json",
     success: successFun,
     error: errorFun,
     complete: function(xhr, status){
