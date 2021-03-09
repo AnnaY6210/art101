@@ -13,7 +13,7 @@
   margin: 5px;
 }
 
-#button {
+.button {
   display: inline;
   position: relative;
   top: 50%;
@@ -28,7 +28,27 @@
   text-align: center;
 }
 
-#button:hover {
+.button:hover {
+  background-color: #66fcf1;
+  color: #0b0c10
+}
+
+#minus, #plus {
+  display: inline;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-100%);
+  transition-duration: 0.4s;
+
+  padding: 15px 32px;
+  border: solid 2px #66fcf1;
+  background-color: #0b0c10;
+  color: #66fcf1;
+  text-align: center;
+}
+
+#minus:hover, #plus:hover {
   background-color: #66fcf1;
   color: #0b0c10
 }
